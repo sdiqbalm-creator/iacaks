@@ -115,3 +115,10 @@ variable "postgres_database" {
   type        = string
   default     = "goalsdb"
 }
+
+
+variable "cost_centre" {
+  description = "Cost centre for billing and reporting"
+  type        = string
+}
+

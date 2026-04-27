@@ -6,7 +6,11 @@ data "azurerm_client_config" "current" {}
 
 locals {
   resource_name_prefix = "${var.environment}-${random_string.suffix.result}"
-  common_tags          = merge(var.tags, { Environment = var.environment })
+  common_tags          = merge(var.tags, 
+  { 
+    Environment = var.environment 
+    CostCentre  = var.cost_centr
+  })
 
   # Key Vault name with proper length restrictions (3-24 chars)
   key_vault_name = "kv-${substr(var.environment, 0, 3)}-${random_string.suffix.result}"
