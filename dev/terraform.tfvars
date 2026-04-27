@@ -1,6 +1,6 @@
 # Environment Configuration
 environment             = "dev"  
-cost_centre = "CC-123451122"              # Environment name (dev/test/prod)
+cost_centre = "CC-1234511"              # Environment name (dev/test/prod)
 location                = "australia east"             # Azure region for resource deployment
 resource_group_name     = "aks-gitops-rg"      # Azure resource group name
 kubernetes_cluster_name = "aks-gitops-cluster" # AKS cluster name
