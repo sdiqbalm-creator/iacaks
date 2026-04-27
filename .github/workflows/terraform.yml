@@ -30,6 +30,9 @@ jobs:
         with:
           terraform_version: 1.6.6
 
+      - name: Debug working directory
+        run: ls -la
+         
       - name: Terraform Init
         run: terraform init
 
